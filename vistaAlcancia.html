@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Caso Alcancía</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css.css" type="text/css" media="all"/>
+    </head>
+    <body>
+        <div>
+            <h1>Caso Alcancía</h1>
+            <p>
+                <?php
+                foreach($metermoneda as $value)
+                {
+                    echo "<span>"."Meter moneda: "."</span>".$value."<br/>";
+                }
+                ?>
+            </p>
+            <p><span>Presiono botón verde: </span><?php echo $presionobotonverde?></p>
+            <p><span>Presionar botón rojo: </span><?php echo $presionobotonrojo ?></p>
+            <p><span>Presiono el botón verde otra vez!: </span><?php echo $presionobotonverde?></p>
+        </div>
+    </body>
+</html>
